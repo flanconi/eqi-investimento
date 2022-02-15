@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { baseURL } from './baseURL';
 
-const GetSimulacao = (indexacao, rendimento) => {
+export const GetSimulacao = (indexacao, rendimento) => {
     axios
     .get(`${baseURL}/simulacoes?tipoIndexacao=${indexacao}&tipoRendimento=${rendimento}`)
     .then( res => {
@@ -10,4 +10,4 @@ const GetSimulacao = (indexacao, rendimento) => {
     .catch( error => {
         console.log(error.data.response)
     })
-}
+};
