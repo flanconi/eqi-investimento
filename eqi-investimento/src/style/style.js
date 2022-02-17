@@ -17,7 +17,6 @@ export const LayoutPrincipal = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 `
 
 export const LayoutForm = styled.form `
