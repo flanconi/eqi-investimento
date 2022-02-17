@@ -1,8 +1,13 @@
-import Home from './components/home';
+import SimulacaoComponent from './components/simulacao';
+import { GlobalState } from './globalContext/GlobalState';
+import * as S from './style/style'
 
 function App() {
   return (
-    <Home/>
+    <GlobalState>
+    <S.GlobalStyle/>
+    <SimulacaoComponent/>
+    </GlobalState>
   );
 }
 
